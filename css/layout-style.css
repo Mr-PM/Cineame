@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body{
+    background-color: #DDD;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+img{
+    width: 100%;
+}
+
+
+.main{
+    width: 80%;
+    margin: auto;
+    transition: 0.25s;
+}
+
+/* Style the tab */
+.movieBtnOptions {
+    overflow: hidden;
+}
+
+  /* Style the buttons inside the tab */
+.movieBtnOptions button {
+    color: #019CDE;
+    font-weight: bold;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 17px; 
+    opacity: .7;
+}
+
+/* Change background color of buttons on hover */
+.movieBtnOptions button:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* movieBtnOptions an active/current tablink class */
+.active{
+    opacity: 1;
+    text-decoration: underline;
+}
+
+/* Style the tab content */
+.tabContent {
+    display: none;
+    padding: 6px 12px;   
+    border-top: none;
+}
+
+/** MOVIE **/
+
+.movieTitle{
+    margin-top: 50px;
+    color: #F66391;
+    text-transform: uppercase;
+}
+
+.movieOptions video{
+    width: 100%;
+}
+
+.movieOptions iframe{
+    width: 480px;
+    height: 380px;
+}
+
+.movieOptions div{
+    height:380px;
+    width:480px
+}
+
+.movieStreaming{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.movieInfo{
+    width: 100%;
+    color: #F66391;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.infoText{
+    color: #019CDE;
+}
+
+
+
+
+/** MOVIE **/
+
+@media screen and (max-width: 830px){
+    .movieStreaming{
+        flex-wrap: wrap;
+    }
+
+    .movieOptions{
+        width: 100%;
+        height: 100%;
+    }
+
+    .movieStreamingHeader{
+        width: 100%;
+    }
+
+    .movieOptions iframe{
+        width: 100%;
+    }
+
+    .movieOptions div{
+        width: 100%;
+    }
+
+    .movieOptions video{
+        width: 100%;
+        height: 100%;
+    }
+}

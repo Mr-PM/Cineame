@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/footer-style.css">
+    <link rel="stylesheet" href="css/menu-style.css">
+    <link rel="stylesheet" href="css/card-style.css">
+    <link rel="stylesheet" href="css/index-style.css">
+
+    <title>CINEAME</title>
+</head>
+<body id="body">
+
+    <header class="menuContainer">
+        <nav class="nav" id="menu">
+            <a href="#" class="close" onclick="closeSideMenu()">
+                <i class="fas fa-times"></i>
+            </a>
+
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+
+                <div class="dropdown">
+                    <div class="dropdownSelect">
+                        <li><a href="latino.html">Peliculas</a></li>
+                    </div>
+            <!--    <div class="dropdownListContainer">
+                        <div class="dropdownList">
+                            <li><a href="sub.html">Sub-Español</a></li>
+                            <li><a href="latino.html">Latino</a></li>
+                        </div> 
+                    </div>-->
+                    
+                </div> 
+
+                <div class="searchContainer">
+                    <input type="search" id="search" placeholder="Search...">
+                    <a href="#" class="btnSearch">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="menuHeader">
+        <div class="slide">
+            <a href="#" onclick="openSlideMenu()">
+            <i class="fas fa-bars"></i></a>
+        </div>
+
+        <div class="logoContainer">
+            <a href="index.html">
+                <span class="cine">CINE</span>
+                <span class="ame">AME</span>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="main" id="main">
+
+        <!--
+        <div class="featuredContainer">
+            <div class="featuredHeader">
+                <p>Destacados</p>
+            </div>
+            <div class="featuredBody">
+                <a href="#">
+                    <div class="card">
+                        <div class="cardHeader">
+                            <div class="imgContainer">
+                                <img src="img/Poster/nakitai watashi wa neko o kaburu/poster.jpeg"nakitai watashi wa neko o kaburu poster">
+                            </div>
+                        </div>
+                        <div class="cardBody">
+                            <div class="titleContainer">
+                                <p>Nakitai watashi wa neko o kaburu</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="card">
+                        <div class="cardHeader">
+                            <div class="imgContainer">
+                                <img src="img/Poster/nakitai watashi wa neko o kaburu/poster.jpeg"nakitai watashi wa neko o kaburu poster">
+                            </div>
+                        </div>
+                        <div class="cardBody">
+                            <div class="titleContainer">
+                                <p>Movie Title jksahdj ashd as hdjashdj</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="card">
+                        <div class="cardHeader">
+                            <div class="imgContainer">
+                                <img src="img/Poster/nakitai watashi wa neko o kaburu/poster.jpeg"nakitai watashi wa neko o kaburu poster">
+                            </div>
+                        </div>
+                        <div class="cardBody">
+                            <div class="titleContainer">
+                                <p>Movie Title jksahdj ashd as hdjashdj</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="card">
+                        <div class="cardHeader">
+                            <div class="imgContainer">
+                                <img src="img/Poster/nakitai watashi wa neko o kaburu/poster.jpeg"nakitai watashi wa neko o kaburu poster">
+                            </div>
+                        </div>
+                        <div class="cardBody">
+                            <div class="titleContainer">
+                                <p>Movie Title jksahdj ashd as hdjashdj</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                
+            </div>
+        </div>-->
+        <div class="alert">
+            <span class="btnClose" onclick="this.parentElement.style.display='none';">&times</span>
+            <strong>Acerca de ... </strong>
+            <p>CINEAME es un website para ver peliculas anime en español de forma facil y gratuito.</p>
+            <p>Esto es un proyecto que sigue en proceso asi que te pedimos disculpas por cualquier error que este en esta pagina</p>
+        </div>
+        <div class="LastaddedContainer">
+            <div class="LastaddedHeader">
+                <p>Ultimas Agregadas</p>
+            </div>
+            <div class="LastaddedBody" id="LastaddedBody">
+
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="footerContainer">
+            <p>CINEAME ©Copyright 2020</p>
+            <p>Ningún vídeo está alojado en nuestros servidores</p>
+            <p>Todos los contenidos son proporcionados por terceros no afiliados</p>
+        </div>
+    </footer>
+    
+
+    <script src="https://kit.fontawesome.com/3bd4771188.js" crossorigin="anonymous"></script>
+
+    <script>
+        function openSlideMenu(){
+            document.getElementById("menu").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "290px";
+            document.getElementById("body").style.overflow = "hidden";
+        }
+
+        function closeSideMenu(){
+            document.getElementById("menu").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.getElementById("main").style.margin = "auto";
+            document.getElementById("body").style.overflow = "auto";
+        }
+    </script>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html> 
