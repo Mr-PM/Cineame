@@ -28,7 +28,7 @@ const movieLat = [
 
 ]; 
 
-var pathname = window.location.pathname.substring(28);
+var pathname = window.location.pathname.substring(24);
 console.log(pathname);
 
 
@@ -36,7 +36,7 @@ if(pathname == 'latino.html'){
     movieLatino(); 
 }
 else{
-    if(pathname == 'index.html'){
+    if(pathname == 'index.html' || pathname == ''){
         movieIndex();
     }
     else{
