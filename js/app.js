@@ -28,7 +28,7 @@ const movieLat = [
 
 ]; 
 
-var pathname = window.location.pathname.substring(24);
+var pathname = window.location.href.substring(24);
 console.log(pathname);
 
 
