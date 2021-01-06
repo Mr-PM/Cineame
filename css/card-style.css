@@ -1,0 +1,132 @@
+/** CARD FEATURED **/
+
+.featuredContainer{
+    width: 100%;
+    padding: 10px;
+}
+
+.featuredBody{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 200px;
+    height: 300px;
+    border-radius: 7px;
+    overflow: hidden;
+    font-size: 15px;
+    transition: all .25s ease;
+    opacity: .8;
+    margin: 10px;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 5px #000;
+    transform: scale(1.02);
+    opacity: 1;
+}
+
+.cardHeader{
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+}
+
+.cardBody{
+    background-color: #FFF;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.featuredHeader{
+    border-left: 3px solid #F66392;
+}
+
+.featuredHeader p{
+    margin-left: 5px;
+    font-size: 20px;
+    color: #019CDE;
+    font-weight: bold;
+}
+
+
+/** CARD FEATURED **/
+
+
+/** CARD LASR ADDED **/
+
+.LastaddedContainer{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.LastaddedBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.LastaddedHeader{
+    border-left: 3px solid #F66392;
+}
+
+.LastaddedHeader p{
+    margin-left: 5px;
+    font-size: 20px;
+    color: #019CDE;
+    font-weight: bold;
+}
+
+/** CARD LASR ADDED **/
+
+/** CARD MOVIE **/
+
+.movieContainer{
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+.movieBody{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.movieBody p{
+    margin-right: 5px;
+}
+
+.movieHeader{
+    border-left: 3px solid #F66392;
+}
+
+.movieHeader p{
+    margin-left: 5px;
+    font-size: 20px;
+    color: #019CDE;
+    font-weight: bold;
+}
+
+/** CARD MOVIE **/
+
+
+/** CARD DARK MODE **/
+
+body.dark .cardBody{
+    background-color: #333;
+    color: #FEFEFE;
+}
+
+/** CARD DARK MODE **/
