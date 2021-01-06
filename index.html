@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/menu-style.css">
-    <link rel="stylesheet" href="../css/footer-style.css">
-    <link rel="stylesheet" href="../css/card-style.css">
-    <link rel="stylesheet" href="../css/layout-style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/footer-style.css">
+    <link rel="stylesheet" href="css/menu-style.css">
+    <link rel="stylesheet" href="css/card-style.css">
+    <link rel="stylesheet" href="css/index-style.css">
 
-    <title id="NavigatorTitle"></title>
+    <title>CINEAME</title>
 </head>
 <body id="body">
 
@@ -20,13 +20,13 @@
             <a href="#" class="close" onclick="closeSideMenu()">
                 <i class="fas fa-times"></i>
             </a>
+
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
 
                 <div class="dropdown">
                     <div class="dropdownSelect">
-                        <li><a href="../latino.html">Peliculas</a></li>
-
+                        <li><a href="latino.html">Peliculas</a></li>
                     </div>
             <!--    <div class="dropdownListContainer">
                         <div class="dropdownList">
@@ -39,7 +39,7 @@
 
                 <div class="searchContainer">
                     <input type="search" id="search" placeholder="Search...">
-                    <a href="#" class="btnSearch" id="btnSearch">
+                    <a href="#" class="btnSearch">
                         <i class="fas fa-search"></i>
                     </a>
                 </div>
@@ -48,7 +48,7 @@
                     <span><i class="fas fa-sun"></i></span>
                     <span><i class="fas fa-moon"></i></span>
                 </button>
-            </ul>
+            </ul> 
         </nav>
     </header>
 
@@ -59,44 +59,30 @@
         </div>
 
         <div class="logoContainer">
-            <a href="../index.html">
-                <span class="cine">CINE</span> 
+            <a href="index.html">
+                <span class="cine">CINE</span>
                 <span class="ame">AME</span>
             </a>
         </div>
 
     </div>
-    
 
     <div class="main" id="main">
-        <div class="movieStreaming">
-            <div class="movieStreamingHeader"> 
-                <div class="movieTitle" id="movieTitle">
-                </div>
-                <div class="movieBtnOptions">
-                    <button class="tablinks" onclick="openOption(event, 'op1')">Op1</button>
-                    <button class="tablinks" onclick="openOption(event, 'op2')">Op2</button>
-                    <button class="tablinks" onclick="openOption(event, 'op3')">Op3</button>
-                </div>
-                <div class="movieOptions">
-                    <div id="op1" class="tabContent" style="display: block;"> 
-                        
-                    </div>
-                    <div id="op2" class="tabContent">
-                    </div>
-                    <div id="op3" class="tabContent">
-                    </div>
-                </div>
+        <div class="alert">
+            <span class="btnClose" onclick="this.parentElement.style.display='none';">&times</span>
+            <strong>Acerca de ... </strong>
+            <p>CINEAME es un website para ver peliculas anime en español de forma facil y gratuito.</p>
+            <p>Esto es un proyecto que sigue en proceso asi que te pedimos disculpas por cualquier error que este en esta pagina</p>
+        </div>
+        <div class="LastaddedContainer">
+            <div class="LastaddedHeader">
+                <p>Ultimas Agregadas</p>
             </div>
-            <div class="movieStreamingBody">
-                <div class="movie">
-                    
-                </div>
-                <div class="movieInfo" id="movieInfo">
-                    
-                </div>
+            <div class="LastaddedBody" id="LastaddedBody">
+
             </div>
         </div>
+
     </div>
 
     <footer>
@@ -106,6 +92,9 @@
             <p>Todos los contenidos son proporcionados por terceros no afiliados</p>
         </div>
     </footer>
+    
+
+    <script src="https://kit.fontawesome.com/3bd4771188.js" crossorigin="anonymous"></script>
 
     <script>
         function openSlideMenu(){
@@ -120,27 +109,10 @@
             document.getElementById("main").style.margin = "auto";
             document.getElementById("body").style.overflow = "auto";
         }
-    </script>    
-    <script>
-        function openOption(evt, option) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabContent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(option).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
     </script>
 
-    <script src="https://kit.fontawesome.com/3bd4771188.js" crossorigin="anonymous"></script>
-
-    <script src="../js/app.js"></script>
-    <script src="../js/darkMode.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/darkMode.js"></script>
 
 </body>
-</html>
+</html> 

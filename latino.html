@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/menu-style.css">
-    <link rel="stylesheet" href="../css/footer-style.css">
-    <link rel="stylesheet" href="../css/card-style.css">
-    <link rel="stylesheet" href="../css/layout-style.css">
-
-    <title id="NavigatorTitle"></title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/menu-style.css">
+    <link rel="stylesheet" href="css/footer-style.css">
+    <link rel="stylesheet" href="css/card-style.css">
+    <link rel="stylesheet" href="css/sub-style.css">
+    
+    <title>CINEAME / LATINO</title>
 </head>
 <body id="body">
 
@@ -20,12 +20,13 @@
             <a href="#" class="close" onclick="closeSideMenu()">
                 <i class="fas fa-times"></i>
             </a>
+
             <ul>
-                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="index.html">Inicio</a></li>
 
                 <div class="dropdown">
                     <div class="dropdownSelect">
-                        <li><a href="../latino.html">Peliculas</a></li>
+                        <li><a href="latino.html">Peliculas</a></li>
 
                     </div>
             <!--    <div class="dropdownListContainer">
@@ -43,7 +44,6 @@
                         <i class="fas fa-search"></i>
                     </a>
                 </div>
-
                 <button class="switch" id="switch">
                     <span><i class="fas fa-sun"></i></span>
                     <span><i class="fas fa-moon"></i></span>
@@ -59,53 +59,49 @@
         </div>
 
         <div class="logoContainer">
-            <a href="../index.html">
-                <span class="cine">CINE</span> 
+            <a href="index.html">
+                <span class="cine">CINE</span>
                 <span class="ame">AME</span>
             </a>
         </div>
 
     </div>
-    
 
     <div class="main" id="main">
-        <div class="movieStreaming">
-            <div class="movieStreamingHeader"> 
-                <div class="movieTitle" id="movieTitle">
-                </div>
-                <div class="movieBtnOptions">
-                    <button class="tablinks" onclick="openOption(event, 'op1')">Op1</button>
-                    <button class="tablinks" onclick="openOption(event, 'op2')">Op2</button>
-                    <button class="tablinks" onclick="openOption(event, 'op3')">Op3</button>
-                </div>
-                <div class="movieOptions">
-                    <div id="op1" class="tabContent" style="display: block;"> 
-                        
-                    </div>
-                    <div id="op2" class="tabContent">
-                    </div>
-                    <div id="op3" class="tabContent">
-                    </div>
-                </div>
+        <div class="movieContainer">
+            <div class="movieHeader">
+                <p>Latino</p>
             </div>
-            <div class="movieStreamingBody">
-                <div class="movie">
-                    
-                </div>
-                <div class="movieInfo" id="movieInfo">
-                    
-                </div>
+            <div class="movieBody" id="movieBody">
+                <a href="peliculas/Boku-no-Hero-Academia-Two-Heroes.html">
+                    <div class="card">
+                        <div class="cardHeader">
+                            <div class="imgContainer" id="imgContainer">
+                                <img src="https://m.media-amazon.com/images/M/MV5BYjViOWY3YTQtNTliOC00NzkwLTllMGMtMjNiZTU0MmZjZTgzXkEyXkFqcGdeQXVyODgzNTQ1NTU@._V1_.jpg" alt="Boku no Hero Academia: Two Heroes">
+                            </div>
+                        </div>
+                        <div class="cardBody">
+                            <div class="titleContainer">
+                                <p>Boku no Hero Academia: Two Heroes</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
             </div>
         </div>
     </div>
 
-    <footer>
+    <footer> 
         <div class="footerContainer">
             <p>CINEAME ©Copyright 2020</p>
             <p>Ningún vídeo está alojado en nuestros servidores</p>
             <p>Todos los contenidos son proporcionados por terceros no afiliados</p>
         </div>
     </footer>
+    
+
+    <script src="https://kit.fontawesome.com/3bd4771188.js" crossorigin="anonymous"></script>
 
     <script>
         function openSlideMenu(){
@@ -120,27 +116,9 @@
             document.getElementById("main").style.margin = "auto";
             document.getElementById("body").style.overflow = "auto";
         }
-    </script>    
-    <script>
-        function openOption(evt, option) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabContent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(option).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
     </script>
 
-    <script src="https://kit.fontawesome.com/3bd4771188.js" crossorigin="anonymous"></script>
-
-    <script src="../js/app.js"></script>
-    <script src="../js/darkMode.js"></script>
-
+    <script src="js/app.js"></script>
+    <script src="js/darkMode.js"></script>
 </body>
 </html>
